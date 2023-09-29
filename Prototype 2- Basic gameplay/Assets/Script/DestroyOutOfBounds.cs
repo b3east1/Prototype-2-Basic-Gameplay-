@@ -16,7 +16,7 @@ public class DestroyOutOfBounds : MonoBehaviour
     void Update()
     {
         // If an objet goes past the players view in game, remove that objet
-        if (transform.position.z > topBound)
+        if (transform.position.x > topBound)
         {
             Destroy(gameObject);
         } else if (transform.position.z < lowerBound)
